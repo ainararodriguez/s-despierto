@@ -1,0 +1,142 @@
+.actividadesWrap{
+    margin-top: 5rem;
+}
+
+.nblack{
+    font-weight: 700;
+}
+
+.actividadesCabeceraCategoria{
+    background-image: url(../img/headerActividades.jpg);
+    height: 385px;
+    background-size: cover;
+    background-position: center;
+    
+}
+.actividadessubtitulo {    
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.actividadesGradient{
+    width: 100%;
+    height: 385px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.t-p{
+    font-weight: bold;
+    grid-area: tituloprogs;
+    padding:.5rem;
+}
+
+.t-e{
+    font-weight: bold;
+    grid-area: tituloevents;
+    padding:.5rem;
+}
+
+.actividadestitulo {
+    display: grid;
+    padding: 10px;
+    grid-template-areas: 
+        "tituloprogs tituloprogs"
+        "programas programas"
+        "tituloevents tituloevents"
+        "eventos eventos";
+     
+}
+
+@media only screen and (min-width: $MQ-M) {
+    .actividadestitulo {
+        display:grid;
+        padding: 10px;
+        grid-template-areas:
+        "tituloprogs tituloevents"
+        "programas eventos";
+        max-width: 1024px;
+        margin: auto;
+    }
+    .actividadessubtitulo, .visionValoresWrap {    
+        max-width: 1024px;
+        margin: auto;
+    }
+}
+
+.actividadeslistas {
+    display: grid;
+    grid-area: listas;
+    padding: 1.5rem;
+    font-size: 1rem;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.actividadesprogramas {
+    grid-area: programas;
+    padding: 1rem;
+    display: grid;
+    grid-row-gap: 10px;
+}
+
+.actividadescellprograma{
+    background-color: $c-green1;
+    display: grid;
+    grid-template-columns: .9fr .1fr;
+    align-items: center;
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.actividadeseventos {
+    grid-area: eventos;
+    padding: 1rem;
+    display: grid;
+    grid-row-gap:10px;
+    align-items: start;
+    align-content: start;
+}
+
+.actividadescellevento{
+    background-color: $c-green2;
+    display: grid;
+    grid-template-columns: .9fr .1fr;
+    align-items: center;
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+   
+}
+
+.actividadestitulo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    justify-items: start;
+}
+
+.actividadestitle{
+    font-size: 2.5rem; 
+    font-weight: bold;
+}
+
+ .actividadesgrid .arrou{
+    align-self: center;
+    justify-self: center;
+ }
+
+.actividadestitulo a {
+    color: white;
+    text-decoration: none;
+}
+
+.titollistaesq{
+    padding: .5rem;
+}
+
+.titollistadreta{
+    padding:.5rem;
+}

@@ -1,0 +1,45 @@
+
+.bloque1-subcategoria{
+    color: white;
+    //margin-bottom: 3rem;
+}
+
+.detalle-subcategoria{
+    padding-left: 1.5rem;
+    display: flex;
+}
+
+.pictograma{
+    height: 3rem;
+    margin-top: 1.5rem;
+    margin-right: 0.75rem;
+}
+
+
+.detalle-subcategoria{
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
+
+
+/*Backgrounds bloque subcategoria*/
+.equipo{background-color:$c-blue1;}
+.historia{background-color:$c-blue2;}
+.programa{background-color:$c-green2;}
+.evento{background-color:$c-green1;}
+
+
+
+
+//RESPONSIVE SIZES
+
+@media only screen and (min-width: $MQ-M){
+    .detalle-subcategoria{
+        max-width: 1024px;
+        margin: auto;
+    }
+
+    .descripcion-subcategoria{
+        max-width: 512px;
+    }
+}
