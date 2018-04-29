@@ -244,6 +244,20 @@
 
 /*TEXTO PROMOVER VOLUNTARIADO*/
 
-.texto-promover-voluntariado{
+.promoverVoluntariado{
     padding: 3rem 0;
+
+}
+
+.promoverVoluntariado p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+@media only screen and (min-width: $MQ-M){
+    .promoverVoluntariado{
+        text-align: center;
+        margin: auto;
+        max-width: 1024px;
+    }
 }
