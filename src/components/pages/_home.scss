@@ -1,22 +1,31 @@
 /*INTRO*/
 
-.intro-home{
-    height: 768px;
+.heroHome{
+    background-attachment: fixed;
+    background-image: url("../img/cabecera_home_s.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: cover;
+    //padding: 1.5rem;
+    height: 90vh;
 }
 
-.header-home{
-    position: absolute;
-    z-index:4;
+.heroBotones{
+    margin-left: 1.5rem;
+    padding-top: 1.5rem;
+}
+
+.intro-home{
+    height: 768px;
 }
 
 .texto-intro{
     font-size: 2.5rem;
     line-height: 2.8rem;
-    padding-top: 8rem;
+    padding-top: 10rem;
     position: absolute;
     z-index:3;
     color: white;
-    width: 75%;
 }
 
 .foto-intro{
@@ -27,43 +36,124 @@
 .transparencia{
     position: absolute;
     z-index:2;
-    height: 768px;
+    height: 90vh;
     width: 100%;
     background-color: black;
     opacity: .3;
 }
 
+@media only screen and (min-width: $MQ-M){
+    .heroHome{
+        background-image: url("../img/cabecera_home_l.jpg");
+    }
+
+    .texto-intro{
+        margin-left: 8rem;
+        max-width: 50%;
+    }
+
+    .heroBotones{
+        margin-left: 0;
+    }
+}
+
+
 
 /*BLOQUES NARANJAS*/
 
-.bloque-naranja1-home{background-color: $c-orange6;}
-.bloque-naranja2-home{background-color: $c-orange5;}
+.bloqueNaranja{
+   background-color: $c-orange5;
+}
 
-.texto-bloque-naranja-home{
-    padding: 3rem 0 4.5rem 0;
+.bloqueNaranjaTexto, .bloqueNaranjaTestimonio, .nombreTestimonio{
     color: white;
 }
 
+.bloqueNaranjaTexto{
+    padding: 3rem 0 3rem 0;
+}
+
+.bloqueNaranjaTestimonio{
+    font-style: italic;
+    font-size: 1.2rem;
+    //line-height: 2rem;
+    font-weight: 700;
+}
+
+.nombreTestimonio{
+    margin-bottom: 0px;
+    padding-bottom: 3rem;
+}
+
+@media only screen and (min-width: $MQ-M){
+    .bloqueNaranjaTextos{
+        //display: flex;
+        margin: auto;
+        max-width: 1024px;
+        padding-bottom: 4rem;
+    }
+
+    .bloqueNaranjaTestimonio, .nombreTestimonio{
+        padding-left: 36rem;
+    }
+}
+
+
+
+/*PREGUNTASHOME*/
+
+.ninos-espalda{
+    background-image: url("../img/ninos_espaldas.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+}
+
+.preguntas{
+    margin: 3rem 0 4.5rem;
+}
+
+.p2,.p3{
+    font-weight: bolder;
+}
+
+@media only screen and (min-width: $MQ-M){
+    .preguntasHome{
+        display: flex;
+        margin: auto;
+        align-items: center;
+    }
+
+    .ninos-espalda, .preguntas{
+        width: 50%;
+    }
+
+    .preguntas{
+        padding: 0 6rem 0 0;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .bloque-pregunta1, .bloque-pregunta2{
+        padding-left: 3.5rem;
+    }
+}
+
+
 
 /*LOCALIZACIONES*/
-
-.localizaciones{
-    background-image: url(../img/localidades_s.jpg);
-    height: 320px;
-    margin-bottom: 2rem;
-}
 
 .titulo-localizaciones{
     margin: 0px;
     width: 100%;
     max-width: 100%;
 }
+
 .texto-localizaciones{
-    background-color: rgba(0, 0, 0, .4);
-    color: white;
     text-align: center;
-    padding-top: 3rem;
-    height: 272px;
+    padding-top: 6rem;
+    height: 500px;
 }
 
 ul{
@@ -76,9 +166,6 @@ ul{
     line-height: 2.5rem;
     font-weight: 900;
 }
-
-
-/*LOGROS*/
 
 .logros,.logro-menores{
     text-align: center;
@@ -112,35 +199,33 @@ ul{
     max-width: 100%;
 }
 
-
-/*FOTO NIÑOS DE ESPALDAS*/
-
-.ninos-espalda{
-    height: 430px;
-    margin-bottom: 5.75rem;
+.logros{
+    margin: 3rem 0 4.5rem;
 }
 
-.ninos-espalda img{
-    position: absolute;
-    left: 50%;
-    margin-left: calc(-718px/2);
-}
+@media only screen and (min-width: $MQ-M){
+    .localizacionesYLogros{
+        display: flex;
+        margin: auto;
+        align-items: center;
+    }
 
+    .localizaciones, .logros {
+        width: 50%;
+    }
 
-/*BLOQUE PREGUNTAS*/
-
-.preguntas{
-    margin-bottom: 4.5rem;
-}
-
-.p2,.p3{
-    font-weight: bolder;
+    .logros{
+        padding: 0 6rem 0 0;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
 }
 
 
-/*BLOQUE VERDE ACTIVIDADES*/
 
-.bloque-verde-actividades{
+/*BLOQUE ACTIVIDADES*/
+
+.bloqueActividadesHomeTexto{
     background-color: $c-green1;
     color: white;
     padding: 3rem 0 1.5rem 0;
@@ -150,12 +235,26 @@ ul{
     margin-left: 1.5rem;
 }
 
+.bloqueActividadesHomeFoto{
+    background-image: url(../img/headerActividades.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
-/*FOTO VOLUNTARIO DE ESPALDAS*/
+@media only screen and (min-width: $MQ-M){
+    .bloqueActividadesHome{
+        display: flex;
+    }
 
-.voluntario-espaldas{
-    height: 430px;
-    margin-bottom: 5.75rem;
+    .bloqueActividadesHomeTexto, .bloqueActividadesHomeFoto{
+        width: 50%;
+        padding: 3rem 3rem 1.5rem;
+    }
+
+    .boton-informate{
+        margin-left: 0;
+    }
 }
 
 

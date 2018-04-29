@@ -1,0 +1,40 @@
+.bannerDonante{
+    background-color: #FD9D7A;
+    background-image: url("../img/banner_donar.jpg");
+    background-position: right top;
+    background-repeat: no-repeat;
+    //background-size: cover;
+    height: 360px;
+}
+
+.textoBanner{
+    margin-top: 4.5rem;
+    font-size: 2.25rem;
+    font-weight: 800;
+    line-height: 2.5rem;
+    margin-bottom:1.5rem;
+    text-align: center;
+    color: white;
+    padding: 3rem 0;
+    margin: auto;
+}
+
+.botonBanner{
+    margin-top: 1.5rem;
+    margin: auto;
+    font-family: 'Raleway';
+}
+
+.contenidoBanner a{
+    margin-left: calc(50% - 74px);
+}
+
+@media only screen and (min-width: $MQ-M){
+    .textoBanner{
+        margin: auto;
+        max-width: 800px;
+    }
+}
+
+
+
