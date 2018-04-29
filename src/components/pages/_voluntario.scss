@@ -1,0 +1,27 @@
+.cabeceraCategoriaVoluntario{
+    background-image: url(../img/cabecera_voluntario.jpg);
+    height: 24rem;
+    background-size: cover;
+    background-position: top;
+    z-index:1;
+}
+
+.destacadoNaranja{
+    background-color: $c-orange4;
+    padding: 3rem 0 4.5rem;
+    color: white;
+
+}
+
+a:-webkit-any-link {
+    color: white;
+}
+
+.destacadoNaranjaTexto{
+    padding-bottom: 3rem;
+}
+
+.destacadoNaranjaTexto, .enlaceFormVoluntario{
+    font-size: 2rem;
+    line-height: 2.625rem;
+}
