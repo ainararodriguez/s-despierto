@@ -136,9 +136,8 @@ span.bottomSpan {
     }
     .active{
         font-weight: bold;
-        text-decoration: underline;
-        color: white !important;
-        /*background:$c-orange6;*/
+        text-decoration: underline white; 
+        color: white;
     }
     #menu ul li {
          display: inline-block;
@@ -160,13 +159,9 @@ span.bottomSpan {
     ul li a.toggle {
         width: 100%;
         display: block;
-        background: orangered(0, 0, 0, 0.78);
         color: white;
         padding: 0;
         transition: background .3s ease;
-    }
-    ul li a.toggle:hover {
-        background:  $c-orange6;
     }
     #menu ul li:hover {
         font-weight: bold;
@@ -195,6 +190,7 @@ span.bottomSpan {
     .toggle{
         margin:auto;
         max-width: 1024px;
+        
     }
     
 }
