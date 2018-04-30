@@ -36,15 +36,21 @@
     line-height: 2.5rem;
 }
 
+.datoWrap{
+    display: flex;
+    align-items: flex-start;
+}
+
 .datoIcon{
-    height: 1.5rem;
-    margin-left: 1.5rem;
+    width: 1.5rem;
+    margin: 0 1.5rem;
 }
 
 .datoTitle{
     text-transform: uppercase;
     font-weight: bold;
     color: $c-green2;
+    margin-bottom: 0rem;
 }
 
 .datosActividadTitle, .datoTitleVolunt{
@@ -53,6 +59,7 @@
     font-weight: bold;
     line-height: 2.5rem;
     text-transform: none;
+    margin-bottom: 1.5rem;
 }
 
 .datoDescripcion{
