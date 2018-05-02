@@ -210,7 +210,7 @@ ul.quienParticipaList{
 
 .experienciaBloq{
     margin-top: 4rem;
-    max-width: 60%;
+
 }
 .expWrap{
     background-color: #f3f3f3;
@@ -229,15 +229,19 @@ ul.quienParticipaList{
    .experienciaBloqText{
        margin: 0 1.5rem;
    } 
+   .experienciaBloq{
+    max-width: 80%;
+}
 }
 
 @media only screen and (min-width: $MQ-L){
     .quienYExperiencia{
-        display: flex;
+        //display: flex;
     }
 
     .experienciaBloq{
-        margin-right: 8rem;
+        //margin-right: 8rem;
+        max-width: 60%;
     }
 }
 
