@@ -209,7 +209,7 @@ ul.quienParticipaList{
 
 .experienciaBloq{
     margin-top: 4rem;
-    max-width: 500px;
+    max-width: 60%;
 }
 .expWrap{
     background-color: #f3f3f3;
@@ -232,7 +232,7 @@ ul.quienParticipaList{
 
 @media only screen and (min-width: $MQ-L){
     .quienYExperiencia{
-        display: flex;
+        //display: flex;
     }
 
     .experienciaBloq{

@@ -1,16 +1,13 @@
-$margin_donation_left: 2.5rem;
+$margin_donation_left: 8rem;
 
 
-.header-d {
-    color:white;
-    background-image: url("../img/pasillo.jpg");
-    background-repeat: no-repeat;
-    grid-area: header; 
+.cabeceraCategoriaDonaciones{
+    background-image: url(../img/img_donaciones.jpg);
+    height: 24rem;
     background-size: cover;
-    background-position: center center;
-   
+    background-position: top;
+    z-index:1;
 }
-
     .gradient {
         display: flex;
         height: 100%;
@@ -22,28 +19,36 @@ $margin_donation_left: 2.5rem;
        font-weight: 800;
        line-height: 24px;
        align-self: flex-end;
-       padding-left: $margin_donation_left;
    }
-
+   @media only screen and (min-width: $MQ-L){
+    .texto-d{
+        padding-left: $margin_donation_left;
+        }
+    }
    .texto-c {
         color:whitesmoke;
         font-weight: 700;
         line-height: 24px;
-        padding-left: $margin_donation_left;
         padding-right: 1rem;
     }
-
+    @media only screen and (min-width: $MQ-L){
+        .texto-c{
+            padding-left: $margin_donation_left;
+            }
+        }
    .text-d {
         color:black;
         line-height: 24px;
         align-self: flex-end;
-        padding-left: $margin_donation_left;
         padding-right: 1rem;
    }
-
+   @media only screen and (min-width: $MQ-L){
+    .text-d{
+        padding-left: $margin_donation_left;
+        }
+    }
 .texto-a {
     line-height: 24px;
-
 }
   
 
@@ -59,15 +64,17 @@ $margin_donation_left: 2.5rem;
 }
 
  .opciones-donacion {
-    grid-area: opciones;
     padding-top: 2rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-left: $margin_donation_left;
     padding-right: 1rem;
  }
-
+ @media only screen and (min-width: $MQ-L){
+    .opciones-donacion{
+        padding-left: $margin_donation_left;
+        }
+    }
  .estilo-donacion {
      font-size: 1rem;
  }
@@ -76,20 +83,21 @@ $margin_donation_left: 2.5rem;
     background-image: url("../img/heart.png");
     background-repeat: no-repeat;
     background-position: center center; 
-    background-size: cover;
-    grid-area: imagen;    
+    background-size: cover; 
     min-height: 350px;
 }
 
 .cuenta {
     padding-top: 1rem;
-    grid-area: cuenta;
     display:flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: $margin_donation_left;
 }
-
+@media only screen and (min-width: $MQ-L){
+    .cuenta{
+        padding-left: $margin_donation_left;
+        }
+    }
 .datos-d {
     font-size: 1rem;
     color:#FC4A00;
@@ -97,31 +105,14 @@ $margin_donation_left: 2.5rem;
 }
 
 .donaciones {
-    display: grid;
-    height: auto;
+    display: flex;
 
-    grid-template-areas: 
-    "header"
-    "slogan"
-    "opciones"
-    "imagen"
-    "cuenta";
-    grid-template-rows: 2fr 1.3fr 2.1fr 2fr 2fr;
-
-}
-
-@media (max-width: 400px) {
-    .imagen {
-        margin-left: $margin_donation_left;
-    }
-    $margin_donation_left: 2rem;
 }
 
 @media (min-width: 768px) {
-    $margin_donation_left: 2.5rem;
+    $margin_donation_leftS: 2.5rem;
     .donaciones {
         display: grid;
-        // font-family: Raleway;
         grid-template-areas:
         "header header"
         "slogan slogan"
@@ -130,7 +121,48 @@ $margin_donation_left: 2.5rem;
         grid-template-columns: 1.5fr 1fr;
         grid-template-rows: 385px .8fr 1fr 1fr;
     }
-
-
-
+}
+.datosEconomicos{
+    margin: 0 auto;
+}
+@media only screen and (min-width: $MQ-M){
+    .datosEconomicos{
+        display: flex;
+        margin: 0 auto;
+    }
+}
+.datosEconomicos{
+    background-color: $c-orange4;
+    padding: 3rem 0 4.5rem;
+    color: white;
+}
+.TextoDatos{
+    display: flex;
+}
+.textoDinero{
+    padding: 3rem 0;
+}
+.textoDatosEconimicos{
+    margin: 0 auto;
+}
+.textoAyuda{
+    margin: 0 auto;
+}
+.opcionesDonacion{
+    padding: 3rem 0;
+}
+.containerCuenta{
+    padding-top: 2rem;
+}
+@media only screen and (min-width: $MQ-L){
+    .opcionesDonacion{
+        display: flex;
+        padding: 3rem 8rem;
+    }
+}
+@media only screen and (min-width: $MQ-L){
+    .experienciaBloqDonaciones{
+        max-width: 60%;
+        padding-left:  8rem;
+    }
 }
