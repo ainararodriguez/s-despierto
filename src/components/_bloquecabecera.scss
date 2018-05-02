@@ -20,6 +20,7 @@
     background-position: center;
     z-index:1;
     margin-bottom: 3rem;
+    background-attachment: fixed;
 }
 .cabeceraCategoriaColor{
     display: flex;
@@ -70,6 +71,7 @@
     width: 300px;
     background-repeat: no-repeat;
     background-origin: content-box, padding-box;
+    background-attachment: fixed;
 }
 
 .titulo-cabecera{

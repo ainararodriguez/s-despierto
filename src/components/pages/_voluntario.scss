@@ -4,6 +4,7 @@
     background-size: cover;
     background-position: top;
     z-index:1;
+    background-attachment: fixed;
 }
 
 .destacadoNaranja{
@@ -152,7 +153,7 @@ p.opVoluntariado1Text {
 
 @media only screen and (min-width: $MQ-L){
     .opVoluntariado1Text{
-        //padding-right: 3rem;
+        padding-right: 3rem;
     }
 
     .enlaceAActividades{
@@ -232,7 +233,7 @@ ul.quienParticipaList{
 
 @media only screen and (min-width: $MQ-L){
     .quienYExperiencia{
-        //display: flex;
+        display: flex;
     }
 
     .experienciaBloq{
