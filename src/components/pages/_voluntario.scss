@@ -146,19 +146,19 @@ p.opVoluntariado1Text {
     }
 
     .opVoluntariado1Text, .enlaceAActividades{
-        width: 50%;
+        width: 80%;
     }
 }
 
 
 @media only screen and (min-width: $MQ-L){
     .opVoluntariado1Text{
-        padding-right: 3rem;
+        //padding-right: 3rem;
     }
 
     .enlaceAActividades{
        padding-right: 10rem;
-       padding-left: 8rem;
+       padding-left: 1rem;
     }
 }
 
