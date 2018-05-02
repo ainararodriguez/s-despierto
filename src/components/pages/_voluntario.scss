@@ -277,11 +277,15 @@ a:-webkit-any-link.linkMail, .linkTel {
         align-items: flex-start;
     }
 
-    .contactoVoluntarioTitle, .datosContacto{
+    .contactoVoluntarioTitle, .containerFormulario{
         margin-left: 8rem;
     }
 
     .datosContacto, .containerFormulario{
         width: 50%;
+    }
+
+    .contactoVoluntarioWrap{
+        margin-right: 8rem;
     }
 }
