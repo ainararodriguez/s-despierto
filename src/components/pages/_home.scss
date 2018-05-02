@@ -263,3 +263,14 @@
         max-width: 1024px;
     }
 }
+
+
+@media only screen and (min-width: $MQ-M){
+    .experienciasHome{
+    display: flex;
+    }
+}
+
+.experienciaBloqText2{
+    margin-top: 4rem !important;
+}
