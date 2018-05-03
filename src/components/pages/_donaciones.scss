@@ -128,6 +128,20 @@ $margin_donation_left: 8rem;
         display: flex;
         margin: 0 auto;
     }
+
+    .enlaceContactDonar{
+        max-width: 1024px;
+        margin: auto;
+        font-size: 2rem;
+    }
+
+    .destDonar{
+        margin-bottom: 3rem;
+    }
+
+    .descripOpDonar{
+        margin-bottom: 3rem;
+    }
 }
 .datosEconomicos{
     margin: 0 auto;
@@ -158,7 +172,7 @@ $margin_donation_left: 8rem;
     margin-top: 3rem;
 }
 .experienciaBloqDonaciones{
-    margin-top: 6rem;
+    //margin-top: 6rem;
 }
 @media only screen and (min-width: $MQ-L){
     .experienciaBloqDonaciones{
@@ -175,7 +189,7 @@ $margin_donation_left: 8rem;
         max-width: 45%;
     }
     .numeroCuenta{
-        margin-top: 2rem;
+        //margin-top: 2rem;
     }
     .containerCuenta{
         padding-left: 8rem;
@@ -185,4 +199,8 @@ $margin_donation_left: 8rem;
 }
 .big{
     font-size: 2rem;
+}
+
+.donacionSubtitle{
+    margin-bottom: 1.5rem;
 }
