@@ -122,9 +122,6 @@ $margin_donation_left: 8rem;
         grid-template-rows: 385px .8fr 1fr 1fr;
     }
 }
-.datosEconomicos{
-    margin: 0 auto;
-}
 @media only screen and (min-width: $MQ-M){
     .datosEconomicos{
         display: flex;
@@ -132,13 +129,12 @@ $margin_donation_left: 8rem;
     }
 }
 .datosEconomicos{
+    margin: 0 auto;
     background-color: $c-orange4;
     padding: 3rem 0 4.5rem;
     color: white;
 }
-.TextoDatos{
-    display: flex;
-}
+
 .textoDinero{
     padding: 3rem 0;
 }
@@ -156,13 +152,33 @@ $margin_donation_left: 8rem;
 }
 @media only screen and (min-width: $MQ-L){
     .opcionesDonacion{
-        display: flex;
+       
         padding: 3rem 8rem;
     }
 }
 @media only screen and (min-width: $MQ-L){
     .experienciaBloqDonaciones{
         max-width: 60%;
-        padding-left:  8rem;
+        padding: 5rem 8rem;
     }
+}
+@media only screen and (min-width: $MQ-L){
+    .cajaCuentaBancaria{
+        display: flex;
+    }
+    .cajaNumeroCuenta{
+        margin-right: 10rem;
+        max-width: 45%;
+    }
+    .numeroCuenta{
+        margin-top: 2rem;
+    }
+    .containerCuenta{
+        padding-left: 8rem;
+        padding-bottom: 3rem;
+    }
+    
+}
+.big{
+    font-size: 2rem;
 }
