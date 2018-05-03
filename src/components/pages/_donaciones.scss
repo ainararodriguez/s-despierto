@@ -7,6 +7,7 @@ $margin_donation_left: 8rem;
     background-size: cover;
     background-position: top;
     z-index:1;
+    background-attachment: fixed;
 }
     .gradient {
         display: flex;
@@ -147,14 +148,17 @@ $margin_donation_left: 8rem;
 .opcionesDonacion{
     padding: 3rem 0;
 }
-.containerCuenta{
-    padding-top: 2rem;
-}
 @media only screen and (min-width: $MQ-L){
     .opcionesDonacion{
        
         padding: 3rem 8rem;
     }
+}
+.datosCuentaContacto{
+    margin-top: 3rem;
+}
+.experienciaBloqDonaciones{
+    margin-top: 6rem;
 }
 @media only screen and (min-width: $MQ-L){
     .experienciaBloqDonaciones{
