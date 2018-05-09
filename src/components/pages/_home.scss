@@ -275,5 +275,10 @@
 
 .experienciaBloqText2{
     margin-top: 4rem !important;
-    margin-left: 3rem;
+    
+}
+@media only screen and (min-width: $MQ-M){
+    .experienciaBloqText2{
+        margin-left: 3rem;
+    }
 }
