@@ -213,8 +213,8 @@ ul.quienParticipaList{
 
 }
 .expWrap{
-    background-color: #f3f3f3;
-    margin: 2rem 0.75rem;
+    background-color: #5BAFD3;
+    margin: 2rem 0;
 }
 
 .experienciaBloqText{
@@ -223,8 +223,11 @@ ul.quienParticipaList{
 
 .experienciaBloqTextDescrip{
     font-weight: 700;
+    color: white;
 }
-
+.autorExp{
+    color: white;
+}
 @media only screen and (min-width: $MQ-M){
    .experienciaBloqText{
        margin: 0 1.5rem;
