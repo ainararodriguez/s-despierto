@@ -8,14 +8,13 @@
 }
 
 .destacadoNaranja{
-    background-color: $c-orange4;
+    background-color: #F1F1F1;
     padding: 3rem 0 4.5rem;
-    color: white;
 
 }
 
 .destacadoNaranja a:-webkit-any-link {
-    color: white;
+    color: $c-orange6;
 }
 
 .destacadoNaranjaTexto{
