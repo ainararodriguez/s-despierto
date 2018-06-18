@@ -212,3 +212,13 @@ $margin_donation_left: 8rem;
     color: #C1D8E1;
     margin: 0 auto;
 }
+.donac{
+    margin-left: 6%;
+    margin-top: 10%;
+}
+@media only screen and (min-width: $MQ-M){
+    .donac{
+        margin-top:0;
+        margin-left: 12%;
+    }
+ }
